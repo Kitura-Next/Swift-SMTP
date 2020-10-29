@@ -1,4 +1,4 @@
-# Contributing to IBM-Swift
+# Contributing to Kitura-Next
 
 We welcome contributions, and request you follow these guidelines.
 
@@ -18,7 +18,7 @@ trying to do and what went wrong. Provide as much context as possible so we can 
 ### Contributor License Agreement
 
 In order for us to accept pull-requests, the contributor must first complete
-a Contributor License Agreement (CLA). Please see our [CLA repo](http://github.com/IBM-Swift/CLA) for more information.
+a Contributor License Agreement (CLA). Please see our [CLA repo](http://github.com/Kitura-Next/CLA) for more information.
 
 This clarifies the intellectual property license granted with any contribution. It is for your protection as a
 Contributor as well as the protection of IBM and its customers; it does not
@@ -26,7 +26,7 @@ change your rights to use your own Contributions for any other purpose.
 
 ### Coding standards
 
-Please ensure you follow [the Kitura coding standards](https://github.com/IBM-Swift/Kitura/blob/master/Documentation/CodeConventions.md)
+Please ensure you follow [the Kitura coding standards](https://github.com/Kitura-Next/Kitura/blob/master/Documentation/CodeConventions.md)
 
 Please note:
 
