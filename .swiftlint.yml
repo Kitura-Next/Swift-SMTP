@@ -1,9 +1,0 @@
-included:
-  - Sources
-  - Tests
-excluded:
-  - Packages
-disabled_rules:
-  - trailing_whitespace
-  - line_length
-  - identifier_name
