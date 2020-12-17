@@ -1,0 +1,5 @@
+{
+    "scripts": {
+    "deploy": "gh-pages -d docs -r https://${KITURA_NEXT}@github.com/Kitura-Next/Swift-SMTP.git"
+  }
+}

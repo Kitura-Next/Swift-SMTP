@@ -1,0 +1,28 @@
+name: Jazzy_Docs
+env:
+  KITURA_NEXT: ${{ secrets.KITURA_NEXT }}
+  USER_NAME: ${{ secrets.USER_NAME }}
+  USER_EMAIL: ${{ secrets.USER_EMAIL }}
+
+on:
+  push:
+    branches: [ master ] # To update docs - add 'ci generate docs' to the merge commit message.
+
+jobs:
+  generate-docs:
+    if: "contains(github.event.head_commit.message, 'ci generate docs')"
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install gh-pages
+        run:  |
+          npm install -g gh-pages
+      - name: install jazzy
+        run:  |
+          gem install jazzy
+      - name: create docs
+        run:  |
+          git config --global user.name "${USER_NAME}"
+          git config --global user.email "${USER_EMAIL}"
+          jazzy --theme fullwidth --module SwiftSMTP --swift-build-tool spm
+          npm run deploy
