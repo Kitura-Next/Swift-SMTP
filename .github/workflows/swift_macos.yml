@@ -27,4 +27,4 @@ jobs:
     - name: Build
       run: swift build
     - name: Test
-      run: swift test --enable-test-discovery
+      run: HOSTNAME='${{ secrets.SMTP_HOST }}' EMAIL='${{ secrets.SMTP_EMAIL }}' PASSWORD='${{ secrets.SMTP_PASS }}' swift test --enable-test-discovery

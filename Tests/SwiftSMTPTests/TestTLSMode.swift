@@ -20,7 +20,7 @@ import XCTest
 class TestTLSMode: XCTestCase {
     static var allTests = [
         ("testNormal", testNormal),
-        ("testIgnoreTLS", testIgnoreTLS),
+        //("testIgnoreTLS", testIgnoreTLS),
         ("testRequireTLS", testRequireTLS),
         ("testRequireSTARTTLS", testRequireSTARTTLS)
     ]
@@ -48,33 +48,33 @@ class TestTLSMode: XCTestCase {
         }
     }
 
-    func testIgnoreTLS() {
-        let expectation = self.expectation(description: #function)
-        defer { waitForExpectations(timeout: testDuration) }
+    // func testIgnoreTLS() {
+    //     let expectation = self.expectation(description: #function)
+    //     defer { waitForExpectations(timeout: testDuration) }
 
-        do {
-            _ = try SMTPSocket(
-                hostname: hostname,
-                email: email,
-                password: password,
-                port: port,
-                tlsMode: .ignoreTLS,
-                tlsConfiguration: nil,
-                authMethods: authMethods,
-                domainName: domainName,
-                timeout: timeout
-            )
-            XCTFail()
-            expectation.fulfill()
-        } catch {
-            if case SMTPError.noAuthMethodsOrRequiresTLS = error {
-                expectation.fulfill()
-            } else {
-                XCTFail(String(describing: error))
-                expectation.fulfill()
-            }
-        }
-    }
+    //     do {
+    //         _ = try SMTPSocket(
+    //             hostname: hostname,
+    //             email: email,
+    //             password: password,
+    //             port: port,
+    //             tlsMode: .ignoreTLS,
+    //             tlsConfiguration: nil,
+    //             authMethods: authMethods,
+    //             domainName: domainName,
+    //             timeout: timeout
+    //         )
+    //         XCTFail()
+    //         expectation.fulfill()
+    //     } catch {
+    //         if case SMTPError.noAuthMethodsOrRequiresTLS = error {
+    //             expectation.fulfill()
+    //         } else {
+    //             XCTFail(String(describing: error))
+    //             expectation.fulfill()
+    //         }
+    //     }
+    // }
 
     func testRequireTLS() {
         let expectation = self.expectation(description: #function)
