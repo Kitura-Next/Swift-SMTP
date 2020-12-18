@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SMTP Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/SMTP" class="dashAnchor"></a>
+
+    <a title="SMTP Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          SwiftSMTP Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">SwiftSMTP Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      SMTP Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AuthMethod.html">AuthMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SMTPError.html">SMTPError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Attachment.html">Attachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Mail.html">Mail</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Mail/User.html">– User</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SMTP.html">SMTP</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SMTP/TLSMode.html">– TLSMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TLSConfiguration.html">TLSConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9SwiftSMTP10Completiona">Completion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9SwiftSMTP8Progressa">Progress</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>SMTP</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SMTP</span></code></pre>
+
+                </div>
+              </div>
+            <p>Used to connect to an SMTP server and send emails.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftSMTP0B0V7TLSModeO"></a>
+                    <a name="//apple_ref/swift/Enum/TLSMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftSMTP0B0V7TLSModeO">TLSMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>TLSMode enum for what form of connection security to enforce.</p>
+
+                        <a href="../Structs/SMTP/TLSMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TLSMode</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftSMTP0B0V8hostname5email8password4port7tlsMode0G13Configuration11authMethods10domainName7timeoutACSS_S2Ss5Int32VAC7TLSModeOAA16TLSConfigurationVSgSayAA10AuthMethodOGSSSutcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(hostname:email:password:port:tlsMode:tlsConfiguration:authMethods:domainName:timeout:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftSMTP0B0V8hostname5email8password4port7tlsMode0G13Configuration11authMethods10domainName7timeoutACSS_S2Ss5Int32VAC7TLSModeOAA16TLSConfigurationVSgSayAA10AuthMethodOGSSSutcfc">init(hostname:<wbr>email:<wbr>password:<wbr>port:<wbr>tlsMode:<wbr>tlsConfiguration:<wbr>authMethods:<wbr>domainName:<wbr>timeout:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes an <code>SMTP</code> instance.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Note:</p>
+
+<ul>
+<li>You may need to enable access for less secure apps for your account on the SMTP server.</li>
+<li>Some servers like Gmail support IPv6, and if your network does  not, you will first attempt to connect via
+IPv6, then timeout, and fall back to IPv4. You can avoid this by disabling IPv6 on your machine.</li>
+</ul>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">hostname</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">port</span><span class="p">:</span> <span class="kt">Int32</span> <span class="o">=</span> <span class="mi">587</span><span class="p">,</span>
+            <span class="nv">tlsMode</span><span class="p">:</span> <span class="kt"><a href="../Structs/SMTP/TLSMode.html">TLSMode</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">requireSTARTTLS</span><span class="p">,</span>
+            <span class="nv">tlsConfiguration</span><span class="p">:</span> <span class="kt"><a href="../Structs/TLSConfiguration.html">TLSConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">authMethods</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/AuthMethod.html">AuthMethod</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
+            <span class="nv">domainName</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"localhost"</span><span class="p">,</span>
+            <span class="nv">timeout</span><span class="p">:</span> <span class="kt">UInt</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hostname</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Hostname of the SMTP server to connect to, i.e. <code>smtp.example.com</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>email</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Username to log in to server.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Password to log in to server, or access token if using XOAUTH2 authorization method.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>port</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Port to connect to the server on. Defaults to <code>465</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tlsMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>TLSMode <code>enum</code> indicating what form of connection security to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tlsConfiguration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Structs/TLSConfiguration.html">TLSConfiguration</a></code> used to connect with TLS. If nil, a configuration with no backing
+certificates is used. See <code><a href="../Structs/TLSConfiguration.html">TLSConfiguration</a></code> for other configuration options.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authMethods</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/AuthMethod.html">AuthMethod</a></code>s to use to log in to the server. If blank, tries all supported methods.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>domainName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Client domain name used when communicating with the server. Defaults to <code>localhost</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>How long to try connecting to the server to before returning an error. Defaults to <code>10</code> seconds.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftSMTP0B0V4send_10completionyAA4MailV_ys5Error_pSgcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/send(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftSMTP0B0V4send_10completionyAA4MailV_ys5Error_pSgcSgtF">send(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send an email.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">mail</span><span class="p">:</span> <span class="kt"><a href="../Structs/Mail.html">Mail</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mail</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Structs/Mail.html">Mail</a></code> object to send.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback when sending finishes. <code>Error</code> is nil on success. (optional)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftSMTP0B0V4send_8progress10completionySayAA4MailVG_yAH_s5Error_pSgtcSgyAI_SayAH_sAJ_ptGtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/send(_:progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftSMTP0B0V4send_8progress10completionySayAA4MailVG_yAH_s5Error_pSgtcSgyAI_SayAH_sAJ_ptGtcSgtF">send(_:<wbr>progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send multiple emails.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Note:</p>
+
+<ul>
+<li>Each call to <code>send</code> will first log in to your server, attempt to send the mails, then closes the
+connection. Pass in an array of <code><a href="../Structs/Mail.html">Mail</a></code>s to send them all in one session.</li>
+<li>If any of the email addresses in a <code><a href="../Structs/Mail.html">Mail</a></code>&lsquo;s <code>to</code>, <code>cc</code>, or <code>bcc</code> are invalid, the entire mail will not
+send and return an <code><a href="../Enums/SMTPError.html">SMTPError</a></code>.</li>
+<li>If an individual <code><a href="../Structs/Mail.html">Mail</a></code> fails while sending an array of <code><a href="../Structs/Mail.html">Mail</a></code>s, the whole sending process will continue
+until all pending <code><a href="../Structs/Mail.html">Mail</a></code>s are attempted.</li>
+<li>Each call to <code>send</code> queues it&rsquo;s <code><a href="../Structs/Mail.html">Mail</a></code>s and sends them one by one. To send <code><a href="../Structs/Mail.html">Mail</a></code>s concurrently, send them
+in separate calls to <code>send</code>.</li>
+</ul>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">mails</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Mail.html">Mail</a></span><span class="p">],</span>
+                 <span class="nv">progress</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9SwiftSMTP8Progressa">Progress</a></span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                 <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9SwiftSMTP10Completiona">Completion</a></span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mails</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of <code><a href="../Structs/Mail.html">Mail</a></code>s to send.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progress</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(<code><a href="../Structs/Mail.html">Mail</a></code>, <code>Error</code>) callback after each <code><a href="../Structs/Mail.html">Mail</a></code> is sent. <code><a href="../Structs/Mail.html">Mail</a></code> is the mail sent and <code>Error</code> is
+the error if it failed. (optional)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>([<code><a href="../Structs/Mail.html">Mail</a></code>], [(<code><a href="../Structs/Mail.html">Mail</a></code>, <code>Error</code>)]) callback after all <code><a href="../Structs/Mail.html">Mail</a></code>s have been attempted. [<code><a href="../Structs/Mail.html">Mail</a></code>] is an
+array of successfully sent <code><a href="../Structs/Mail.html">Mail</a></code>s. [(<code><a href="../Structs/Mail.html">Mail</a></code>, <code>Error</code>)] is an array of failed <code><a href="../Structs/Mail.html">Mail</a></code>s and their
+corresponding <code>Error</code>s. (optional)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-12-18)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

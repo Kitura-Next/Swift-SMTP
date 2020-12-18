@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TLSConfiguration Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/TLSConfiguration" class="dashAnchor"></a>
+
+    <a title="TLSConfiguration Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          SwiftSMTP Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">SwiftSMTP Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      TLSConfiguration Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AuthMethod.html">AuthMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SMTPError.html">SMTPError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Attachment.html">Attachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Mail.html">Mail</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Mail/User.html">– User</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SMTP.html">SMTP</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SMTP/TLSMode.html">– TLSMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TLSConfiguration.html">TLSConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9SwiftSMTP10Completiona">Completion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9SwiftSMTP8Progressa">Progress</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>TLSConfiguration</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TLSConfiguration</span></code></pre>
+
+                </div>
+              </div>
+            <p>Configuration for connecting with TLS. For more info, see <a href="https://github.com/Kitura-Next/BlueSSLService">https://github.com/Kitura-Next/BlueSSLService</a>.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftSMTP16TLSConfigurationV15withCipherSuite34clientAllowsSelfSignedCertificatesACSSSg_Sbtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(withCipherSuite:clientAllowsSelfSignedCertificates:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftSMTP16TLSConfigurationV15withCipherSuite34clientAllowsSelfSignedCertificatesACSSSg_Sbtcfc">init(withCipherSuite:<wbr>clientAllowsSelfSignedCertificates:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a configuration with no backing certificates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">withCipherSuite</span> <span class="nv">cipherSuite</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">clientAllowsSelfSignedCertificates</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cipherSuite</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional String containing the cipher suite to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientAllowsSelfSignedCertificates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>true</code> to accept self-signed certificates from a server. <code>false</code> otherwise.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftSMTP16TLSConfigurationV25withCACertificateFilePath016usingCertificateF00d3KeyF00H15SelfSignedCerts11cipherSuiteACSSSg_A2ISbAItcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(withCACertificateFilePath:usingCertificateFile:withKeyFile:usingSelfSignedCerts:cipherSuite:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftSMTP16TLSConfigurationV25withCACertificateFilePath016usingCertificateF00d3KeyF00H15SelfSignedCerts11cipherSuiteACSSSg_A2ISbAItcfc">init(withCACertificateFilePath:<wbr>usingCertificateFile:<wbr>withKeyFile:<wbr>usingSelfSignedCerts:<wbr>cipherSuite:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a configuration using a <code>CA Certificate</code> file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">withCACertificateFilePath</span> <span class="nv">caCertificateFilePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="n">usingCertificateFile</span> <span class="nv">certificateFilePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="n">withKeyFile</span> <span class="nv">keyFilePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="n">usingSelfSignedCerts</span> <span class="nv">selfSigned</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nv">cipherSuite</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>caCertificateFilePath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path to the PEM formatted CA certificate file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>certificateFilePath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path to the PEM formatted certificate file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyFilePath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path to the PEM formatted key file. If nil, <code>certificateFilePath</code> will be used.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selfSigned</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if certs are <code>self-signed</code>, false otherwise. Defaults to true.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cipherSuite</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional String containing the cipher suite to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftSMTP16TLSConfigurationV26withCACertificateDirectory20usingCertificateFile0d3KeyI00G15SelfSignedCerts11cipherSuiteACSSSg_A2ISbAItcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(withCACertificateDirectory:usingCertificateFile:withKeyFile:usingSelfSignedCerts:cipherSuite:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftSMTP16TLSConfigurationV26withCACertificateDirectory20usingCertificateFile0d3KeyI00G15SelfSignedCerts11cipherSuiteACSSSg_A2ISbAItcfc">init(withCACertificateDirectory:<wbr>usingCertificateFile:<wbr>withKeyFile:<wbr>usingSelfSignedCerts:<wbr>cipherSuite:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a configuration using a <code>CA Certificate</code> directory.</p>
+
+<p><em>Note:</em> <code>caCertificateDirPath</code> - All certificates in the specified directory <strong>must</strong> be hashed using the <code>OpenSSL Certificate Tool</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">withCACertificateDirectory</span> <span class="nv">caCertificateDirPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="n">usingCertificateFile</span> <span class="nv">certificateFilePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="n">withKeyFile</span> <span class="nv">keyFilePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="n">usingSelfSignedCerts</span> <span class="nv">selfSigned</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nv">cipherSuite</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>caCertificateDirPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path to a directory containing CA certificates. <em>(see note above)</em></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>certificateFilePath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path to the PEM formatted certificate file. If nil, <code>certificateFilePath</code> will be used.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyFilePath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path to the PEM formatted key file (optional). If nil, <code>certificateFilePath</code> is used.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selfSigned</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if certs are <code>self-signed</code>, false otherwise. Defaults to true.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cipherSuite</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional String containing the cipher suite to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftSMTP16TLSConfigurationV17withChainFilePath0D8Password20usingSelfSignedCerts012clientAllowsjK12Certificates11cipherSuiteACSSSg_AIS2bAItcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(withChainFilePath:withPassword:usingSelfSignedCerts:clientAllowsSelfSignedCertificates:cipherSuite:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftSMTP16TLSConfigurationV17withChainFilePath0D8Password20usingSelfSignedCerts012clientAllowsjK12Certificates11cipherSuiteACSSSg_AIS2bAItcfc">init(withChainFilePath:<wbr>withPassword:<wbr>usingSelfSignedCerts:<wbr>clientAllowsSelfSignedCertificates:<wbr>cipherSuite:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a configuration using a <code>Certificate Chain File</code>.</p>
+
+<p><em>Note:</em> If using a certificate chain file, the certificates must be in PEM format and must be sorted starting with the subject&rsquo;s certificate (actual client or server certificate), followed by intermediate CA certificates if applicable, and ending at the highest level (root) CA.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">withChainFilePath</span> <span class="nv">chainFilePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="n">withPassword</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="n">usingSelfSignedCerts</span> <span class="nv">selfSigned</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nv">clientAllowsSelfSignedCertificates</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nv">cipherSuite</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chainFilePath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path to the certificate chain file (optional). <em>(see note above)</em></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Password for the chain file (optional). If using self-signed certs, a password is required.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selfSigned</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if certs are <code>self-signed</code>, false otherwise. Defaults to true.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientAllowsSelfSignedCertificates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if, as a client, connections to self-signed servers are allowed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cipherSuite</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional String containing the cipher suite to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/init(withPEMCertificateString:usingSelfSignedCerts:cipherSuite:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">init(withPEMCertificateString:<wbr>usingSelfSignedCerts:<wbr>cipherSuite:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a configuration using a <code>PEM formatted certificate in String form</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-12-18)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
