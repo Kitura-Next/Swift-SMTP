@@ -1,13 +1,23 @@
 # Swift-SMTP
 
-![Swift-SMTP bird](https://github.com/Kitura-Next/Swift-SMTP/blob/master/Assets/swift-smtp-bird.png?raw=true)
+<p align="center">
+<a href="http://kituranext.org/">
+<img src="https://raw.githubusercontent.com/Kitura-Next/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
+</a>
+</p>
 
-Swift SMTP client.
+<p align="center">
+    <a href="https://www.kituranext.org/learn/">
+    <img src="https://img.shields.io/badge/docs-kitura-1FBCE4.svg" alt="APIDoc"></a>
+    <a href="https://github.com/Kitura-Next/Swift-SMTP/actions?query=workflow%3ASwift+MacOS">
+    <img src="https://github.com/Kitura-Next/Swift-SMTP/workflows/Swift%20MacOS/badge.svg"></a>
+    <a href="https://github.com/Kitura-Next/Swift-SMTP/actions?query=workflow%3ASwift+Ubuntu">
+    <img src="https://github.com/Kitura-Next/Swift-SMTP/workflows/Swift%20Ubuntu/badge.svg"></a>
+    <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
+    <a href="http://swift-at-ibm-slack.mybluemix.net/">
+    <img src="http://swift-at-ibm-slack.mybluemix.net/badge.svg" alt="Slack Status"></a>
+</p>
 
-![Build Status](https://travis-ci.org/Kitura-Next/Swift-SMTP.svg?branch=master)
-![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
-![Linux](https://img.shields.io/badge/os-linux-green.svg?style=flat)
-![Apache 2](https://img.shields.io/badge/license-Apache2-blue.svg?style=flat)
 
 ## Features
 
@@ -17,16 +27,15 @@ Swift SMTP client.
 - Add custom headers
 - [Documentation](https://kitura-next.github.io/Swift-SMTP/)
 
-## Swift Version
-
-macOS & Linux: `Swift 4.0.3`, `Swift 4.1` and `Swift 4.1.2`
+## Swift version
+Requires **Swift 5.1** or newer. You can download the Swift binaries by following this [link](https://swift.org/download/).  
+Compatibility with other Swift versions is not guaranteed.
 
 ## Installation
 
 You can add `SwiftSMTP` to your project using [Swift Package Manager](https://swift.org/package-manager/). If your project does not have a `Package.swift` file, create one by running `swift package init` in the root directory of your project. Then open `Package.swift` and add `SwiftSMTP` as a dependency. Be sure to add it to your desired targets as well:
 
 ```swift
-// swift-tools-version:4.0
 
 import PackageDescription
 
